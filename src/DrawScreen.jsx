@@ -1,4 +1,3 @@
-// WinnerScreen.jsx
 import React from 'react';
 
 function DrawScreen ({ onReset, onQuit }) {

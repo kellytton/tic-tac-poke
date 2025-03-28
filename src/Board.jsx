@@ -24,7 +24,10 @@ function Board({ onQuit }) { // Accept onQuit prop
         return null; // No winner yet
     };
 
+    // Update curren player's move ("X" or "O")
     const handleClick = (index) => {
+        // Called with the index of the square that was clicked
+
         if (squares[index] || winner) return; // If square is filled or game is over
 
         const newSquares = squares.slice(); // Make a copy of squares
@@ -68,8 +71,13 @@ function Board({ onQuit }) { // Accept onQuit prop
                 {winner ? `Winner: ${winner}` : `Next player: ${XisNext ? "X" : "O"}`}
             </div>
             <div className="game-board">
+                {/* Map over squares array and create Square component for each square */}
                 {squares.map((value, index) => (
-                    <Square key={index} value={value} onClick={() => handleClick(index)} />
+                    <Square
+                        key={index}
+                        value={value}
+                        onClick={() => handleClick(index)}
+                    />
                 ))}
             </div>
             <div>
