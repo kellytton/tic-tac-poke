@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Dynapuff";
 }
 
 .board {
@@ -18,6 +19,10 @@
 }
 
 .square {
+  display: flex;                /* Enable Flexbox */
+  justify-content: center;      /* Horizontally center the content */
+  align-items: center;          /* Vertically center the content */
   width: 80px;
   height: 80px;
+  border-radius: 8px;
 }
