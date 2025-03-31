@@ -48,6 +48,11 @@ html, body {
   background-color: #D9D9D9;
 }
 
+.square:hover {
+  background-color: #c7c2c2;
+  cursor: pointer;
+}
+
 .game-screen {
   display: flex;
   flex-direction: column;
