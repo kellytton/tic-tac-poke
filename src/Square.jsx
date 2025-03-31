@@ -1,12 +1,9 @@
-import React from "react";
-
-function Square({ value, onClick }) {
-    // value: "X", "O", or null
-
+function Square({ value, onClick, masterball, loveball }) {
     return (
-        <button className="square" onClick={onClick}>
-            {value}
-        </button>
+        <div className="square" onClick={onClick}>
+            {value === "X" && <img className="pokeball" src={masterball} alt="Masterball" />} {/* Display Masterball for "X" */}
+            {value === "O" && <img className="pokeball" src={loveball} alt="Loveball" />}    {/* Display Loveball for "O" */}
+        </div>
     );
 }
 

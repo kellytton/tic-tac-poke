@@ -1,28 +1,160 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+html, body {
+  height: 100%; 
+  width: 100%; 
+  margin: 0;    
+  padding: 0; 
+  overflow: hidden; 
   font-family: "Dynapuff";
 }
 
-.board {
+.button {
+  color: #936FAF;
+  background-color: #D1BFDA;
+  border: 4px solid #936FAF; 
+  border-radius: 8px;
+  font-size: 18px;
+  width: 141px;
+  height: 45px;
+  
+  display: flex;             /* Use flexbox */
+  justify-content: center;   /* Center the text horizontally */
+  align-items: center;       /* Center the text vertically */
+}
+
+/* Ensure the wrapper is 700px by 650px and prevents scrolling */
+.wrapper {
+  display: flex;
+  flex-direction: column;  /* Stack child elements vertically */
+  width: 700px;
+  height: 650px;
+  background-color: #D1BFDA; /* Background color for the wrapper */
+  border-radius: 8px;
+  overflow: hidden;  /* Prevent any overflow and scrolling */
+  border-color: #936FAF;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  color: #936FAF;
+  font-size: 36px;
+  margin: 40px 20px; /* top/bot, left/right */
+}
+
+.screen--button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: 20px;
+  gap: 10px
+}
+
+.screen-button {
+  margin-top: 30px;
+  background: none;
+  padding: 0;
+}
+
+.minimize-button, .exit-button {
+  width: 53px;
+  height: 53px;
+}
+
+.screen-container {
+  height: 482px; /* Fixed height */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin: 0 20px;
+  margin-bottom: 20px;
+  background-image: url(./assets/background.png);
+
+  background-size: cover;  /* Cover the whole container */
+  background-position: center;  /* Center the image inside the container */
+
+  /* Border settings */
+  border: 7px solid #936FAF;
+  border-radius: 8px;
+}
+
+/* Styling for MenuScreen content */
+.menu-screen {
+  text-align: center;
+}
+
+.menu-title {
+  color: #E9D7F8;
+  font-size: 64px;
+}
+
+.play-button {
+  color: #936FAF;
+  background-color: #D1BFDA;
+  border: 4px solid #936FAF;
+  border-radius: 8px;
+  width: 170px;
+  height: 54px;
+  font-size: 20px;
+}
+
+.square {
+  display: flex;             
+  justify-content: center;      
+  align-items: center;        
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  background-color: #D9D9D9;
+}
+
+.game-screen {
   display: flex;
   flex-direction: column;
+  gap: 25px;
+  width: 100%;
+  align-items: center;
 }
 
 .game-board {
   display: grid;
-  padding: 40px;
   grid-template-columns: repeat(3, 1fr);  /* 3 equal columns */
-  gap: 10px;
+  align-items: center;
+  padding-left: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: rgba(217, 217, 217, 0.5);
+
+  border-radius: 8px;
+  width: 282px;
+  height: 282px;
 }
 
-.square {
-  display: flex;                /* Enable Flexbox */
-  justify-content: center;      /* Horizontally center the content */
-  align-items: center;          /* Vertically center the content */
-  width: 80px;
-  height: 80px;
-  border-radius: 8px;
+.game-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.status-container {
+  font-size: 20px;
+}
+
+.status {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.pokeball {
+  width: 68px;
+  height: 68px;
+}
+
+.pokeball-status-container {
+  width: 38px;
+  height: 38px;
 }
