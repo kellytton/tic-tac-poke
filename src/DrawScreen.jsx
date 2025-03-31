@@ -6,8 +6,8 @@ function DrawScreen ({ onReset, onQuit }) {
             <h1 className="draw-title">It's a <span className="draw-color">draw</span> :o</h1>
             <h3 className="draw-subtitle">Everyone's a winner!</h3>
             <div className="endgame-button">
-                <button className="button winnerscreen-button" onClick={onReset}>Play Again</button>
-                <button className="button winnerscreen-button" onClick={onQuit}>Home</button>
+                <button className="button end-button endscreen-play-again-button" onClick={onReset}>Play Again</button>
+                <button className="button end-button endscreen-home-button" onClick={onQuit}>Home</button>
             </div>
         </div>
     );

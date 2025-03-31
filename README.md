@@ -24,4 +24,4 @@ Built with **React**, **Vite**, and **Electron**, Tic-Tac-Poké brings the nosta
 
 ---
 
-Updated as of 3/28
+Updated as of 3/31

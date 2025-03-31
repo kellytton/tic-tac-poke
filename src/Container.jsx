@@ -19,13 +19,13 @@ function Container() {
 
     return (
         <div className="container">
-            <div className="top">
+            <div className="top drag">
                 <h1 className="title">Tic-Tac-Poké</h1>
                 <div className="screen--button">
-                    <button className="screen-button">
+                    <button className="screen-button no-drag">
                         <img className="minimize-button" src={minimize} alt="Minimize" />
                     </button>
-                    <button className="screen-button">
+                    <button className="screen-button no-drag">
                         <img className="exit-button" src={exit} alt="Exit" />
                     </button>
                 </div>

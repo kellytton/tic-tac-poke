@@ -9,9 +9,6 @@ function WinnerScreen({ winner, onReset, onQuit }) {
             <div className="winner">
                 <img className="winner-ball" src={winnerBall} alt="Winner's Pokeball" />
             </div>
-            {/* <h1 className="winner-title">
-                Congratulations !!
-            </h1> */}
             <h1 className="winner-title">
                 <span className="title-item">C</span>
                 <span className="title-item">o</span>
@@ -33,8 +30,8 @@ function WinnerScreen({ winner, onReset, onQuit }) {
                 <span className="title-item">!</span>
             </h1>
             <div className="endgame-button">
-                <button className="button winnerscreen-button" onClick={onReset}>Play Again</button>
-                <button className="button winnerscreen-button" onClick={onQuit}>Home</button>
+                <button className="button end-button endscreen-play-again-button" onClick={onReset}>Play Again</button>
+                <button className="button end-button endscreen-home-button" onClick={onQuit}>Home</button>
             </div>
         </div>
     );
