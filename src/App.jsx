@@ -1,10 +1,10 @@
 import './App.css'
-import Wrapper from "./Wrapper";
+import Container from "./Container";
 
 function App() {
     return(
         <>
-            <Wrapper/>
+            <Container/>
         </>
     );
 }

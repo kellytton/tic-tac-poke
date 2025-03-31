@@ -24,7 +24,7 @@ function createWindow() {
 
   mainWindow.loadURL(
     isDev
-      ? "http://localhost:3000"
+      ? "http://localhost:3001"
       : `file://${path.join(__dirname, "../dist/index.html")}`
   );
   // Open the DevTools.

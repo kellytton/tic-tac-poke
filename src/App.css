@@ -1,3 +1,4 @@
+/* Global CSS */
 html, body {
   height: 100%; 
   width: 100%; 
@@ -12,6 +13,22 @@ html, body {
   background-color: #D1BFDA;
   border: 4px solid #936FAF; 
   border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #b89ecc;
+  border: 4px solid #D1BFDA; 
+  color: #eee8f2;
+}
+
+.endgame-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* GameScreen CSS */
+.gamescreen-button {
   font-size: 18px;
   width: 141px;
   height: 45px;
@@ -19,86 +36,6 @@ html, body {
   display: flex;             /* Use flexbox */
   justify-content: center;   /* Center the text horizontally */
   align-items: center;       /* Center the text vertically */
-}
-
-/* Ensure the wrapper is 700px by 650px and prevents scrolling */
-.wrapper {
-  display: flex;
-  flex-direction: column;  /* Stack child elements vertically */
-  width: 700px;
-  height: 650px;
-  background-color: #D1BFDA; /* Background color for the wrapper */
-  border-radius: 8px;
-  overflow: hidden;  /* Prevent any overflow and scrolling */
-  border-color: #936FAF;
-}
-
-.top {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.title {
-  color: #936FAF;
-  font-size: 36px;
-  margin: 40px 20px; /* top/bot, left/right */
-}
-
-.screen--button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  margin-right: 20px;
-  gap: 10px
-}
-
-.screen-button {
-  margin-top: 30px;
-  background: none;
-  padding: 0;
-}
-
-.minimize-button, .exit-button {
-  width: 53px;
-  height: 53px;
-}
-
-.screen-container {
-  height: 482px; /* Fixed height */
-  display: flex;
-  justify-content: center; /* Center the content horizontally */
-  align-items: center; /* Center the content vertically */
-  margin: 0 20px;
-  margin-bottom: 20px;
-  background-image: url(./assets/background.png);
-
-  background-size: cover;  /* Cover the whole container */
-  background-position: center;  /* Center the image inside the container */
-
-  /* Border settings */
-  border: 7px solid #936FAF;
-  border-radius: 8px;
-}
-
-/* Styling for MenuScreen content */
-.menu-screen {
-  text-align: center;
-}
-
-.menu-title {
-  color: #E9D7F8;
-  font-size: 64px;
-}
-
-.play-button {
-  color: #936FAF;
-  background-color: #D1BFDA;
-  border: 4px solid #936FAF;
-  border-radius: 8px;
-  width: 170px;
-  height: 54px;
-  font-size: 20px;
 }
 
 .square {
@@ -157,4 +94,141 @@ html, body {
 .pokeball-status-container {
   width: 38px;
   height: 38px;
+}
+
+/* Container CSS */
+.container {
+  display: flex;
+  flex-direction: column;  /* Stack child elements vertically */
+  width: 700px;
+  height: 650px;
+  background-color: #D1BFDA; /* Background color for the container */
+  border-radius: 8px;
+  overflow: hidden;  /* Prevent any overflow and scrolling */
+  border-color: #936FAF;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  color: #936FAF;
+  font-size: 36px;
+  margin: 40px 20px; /* top/bot, left/right */
+}
+
+.screen--button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-right: 20px;
+  gap: 10px
+}
+
+.screen-button {
+  margin-top: 30px;
+  background: none;
+  padding: 0;
+}
+
+.minimize-button, .exit-button {
+  width: 53px;
+  height: 53px;
+}
+
+.screen-container {
+  height: 482px; /* Fixed height */
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin: 0 20px;
+  margin-bottom: 20px;
+  background-image: url(./assets/background.png);
+
+  background-size: cover;  /* Cover the whole container */
+  background-position: center;  /* Center the image inside the container */
+
+  /* Border settings */
+  border: 7px solid #936FAF;
+  border-radius: 8px;
+}
+
+/* MenuScreen CSS */
+.menu-screen {
+  text-align: center;
+}
+
+.menu-title {
+  color: #E9D7F8;
+  font-size: 64px;
+}
+
+.play-button {
+  color: #936FAF;
+  background-color: #D1BFDA;
+  border: 4px solid #936FAF;
+  border-radius: 8px;
+  width: 170px;
+  height: 54px;
+  font-size: 20px;
+}
+
+/* Winner Screen */
+.winner, .winner-title {
+  margin: 0;
+}
+
+.winner-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.winnerscreen-button {
+  font-size: 18px;
+}
+
+.winner {
+  text-align: center;
+  margin-bottom: 13.333px;
+}
+
+.winner-title {
+  color: #E9D7F8;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.winner-ball {
+  width: 87px;
+  height: 87px;
+}
+
+/* DrawScreen */
+.draw-title, .draw-subtitle {
+  margin: 0;
+}
+
+.draw-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.draw-title {
+  color: #E9D7F8;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.draw-color {
+  color: #F5D1A8;
+}
+
+.draw-subtitle {
+  color: #E9D7F8;
+  font-size: 30px;
+  margin-bottom: 30px;
 }

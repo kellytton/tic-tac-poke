@@ -4,7 +4,7 @@ import exit from "./assets/X-button.png";
 import MenuScreen from "./MenuScreen";
 import GameScreen from "./GameScreen"; // The game screen to show when the game starts
 
-function Wrapper() {
+function Container() {
     const [gameStarted, setGameStarted] = useState(false); // Track if the game has started
 
     // Function to start the game
@@ -18,31 +18,31 @@ function Wrapper() {
     };
 
     return (
-        <div className="wrapper">
+        <div className="container">
             <div className="top">
                 <h1 className="title">Tic-Tac-Poké</h1>
                 <div className="screen--button">
-                <button className="screen-button">
-                    <img className="minimize-button" src={minimize} alt="Minimize" />
-                </button>
-                <button className="screen-button">
-                    <img className="exit-button" src={exit} alt="Exit" />
-                </button>
+                    <button className="screen-button">
+                        <img className="minimize-button" src={minimize} alt="Minimize" />
+                    </button>
+                    <button className="screen-button">
+                        <img className="exit-button" src={exit} alt="Exit" />
+                    </button>
+                </div>
             </div>
-        </div>
 
-        {/* Conditional rendering based on the gameStarted state */}
-        {gameStarted ? (
-            <div className="screen-container">
-                <GameScreen onQuit={handleQuitGame} />
-            </div>
-        ) : (
-            <div className="screen-container">
-                <MenuScreen onStartGame={handleStartGame} />
-            </div>
-        )}
+            {/* Conditional rendering based on the gameStarted state */}
+            {gameStarted ? (
+                <div className="screen-container">
+                    <GameScreen onQuit={handleQuitGame} />
+                </div>
+            ) : (
+                <div className="screen-container">
+                    <MenuScreen onStartGame={handleStartGame} />
+                </div>
+            )}
         </div>
     );
 }
 
-export default Wrapper;
+export default Container;

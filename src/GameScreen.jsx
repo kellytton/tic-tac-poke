@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Square from "./Square"; // Assuming you have a Square component for each square
+import Square from "./Square";
 import WinnerScreen from "./WinnerScreen"; // Screen for displaying the winner
 import DrawScreen from "./DrawScreen"; // Screen for displaying draw condition
 
-import Masterball from "./assets/Masterball.png";  // Import Masterball image
-import Loveball from "./assets/Loveball.png";      // Import Loveball image
+import Masterball from "./assets/Masterball.png";
+import Loveball from "./assets/Loveball.png";
 
 function GameScreen({ onQuit }) {
     const [squares, setSquares] = useState(Array(9).fill(null)); // Game board state
@@ -67,15 +67,8 @@ function GameScreen({ onQuit }) {
         <div className="game-screen">
             <div className="status-container">
                 {winner ? (
-                    // If there's a winner, show the winner's ball
-                    <div className="status">
-                        Winner:{" "}
-                        {winner === "X" ? (
-                            <img className="pokeball-status-container" src={Masterball} alt="Masterball" />
-                        ) : (
-                            <img className="pokeball-status-container" src={Loveball} alt="Loveball" />
-                        )}
-                    </div>
+                    // If there's a winner, it will go to winner screen
+                    <></>
                 ) : (
                     // If no winner, show the next player with the respective ball
                     <div className="status">
@@ -101,8 +94,8 @@ function GameScreen({ onQuit }) {
                 ))}
             </div>
             <div className="game-button">
-                <button className="button" onClick={handleResetClick}>Reset</button>
-                <button className="button" onClick={onQuit}>Home</button>
+                <button className="button gamescreen-button" onClick={handleResetClick}>Reset</button>
+                <button className="button gamescreen-button" onClick={onQuit}>Home</button>
             </div>
         </div>
     );
