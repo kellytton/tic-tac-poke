@@ -1,5 +1,5 @@
 const path = require("path");
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 
 const isDev = process.env.IS_DEV == "true" ? true : false;
 
@@ -7,19 +7,14 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 700,
     height: 650,
-    autoHideMenutop: true,
+    autoHideMenuBar: true, // Adjust this to true to hide the top menu (autoHideMenuBar)
     resizable: false,
-    frame: false,
+    frame: false, // Disables the default window frame
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
-      nodeIntegration: true,
-      contextIsolation: false,
+      nodeIntegration: false, // Disable node integration for security reasons
+      contextIsolation: true, // Enable context isolation for security
     },
-  });
-
-  mainWindow.webContents.setWindowOpenHandler((edata) => {
-    shell.openExternal(edata.url);
-    return { action: "deny" };
   });
 
   mainWindow.loadURL(
@@ -27,9 +22,20 @@ function createWindow() {
       ? "http://localhost:3000"
       : `file://${path.join(__dirname, "../dist/index.html")}`
   );
-  // Open the DevTools.
+
+  // Handle Minimize
+  ipcMain.on("minimize-btn", () => {
+    mainWindow.minimize();
+  });
+
+  // Handle Close
+  ipcMain.on("close-btn", () => {
+    mainWindow.close();
+  });
+
+  // Open the DevTools if in development mode
   if (isDev) {
-    //mainWindow.webContents.openDevTools();
+    // mainWindow.webContents.openDevTools();
   }
 }
 

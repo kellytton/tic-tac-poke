@@ -17,15 +17,25 @@ function Container() {
         setGameStarted(false); // Set to false to go back to the menu screen
     };
 
+    // Handle minimize action
+    const handleMinimize = () => {
+        window.electron.minimizeApp(); // Minimize the window
+    };
+
+    // Handle close action
+    const handleClose = () => {
+        window.electron.closeApp(); // Close the window
+    };
+
     return (
         <div className="container">
             <div className="top drag">
                 <h1 className="title">Tic-Tac-Poké</h1>
                 <div className="screen--button">
-                    <button className="screen-button no-drag">
+                    <button className="screen-button no-drag" onClick={handleMinimize}>
                         <img className="minimize-button" src={minimize} alt="Minimize" />
                     </button>
-                    <button className="screen-button no-drag">
+                    <button className="screen-button no-drag" onClick={handleClose}>
                         <img className="exit-button" src={exit} alt="Exit" />
                     </button>
                 </div>
