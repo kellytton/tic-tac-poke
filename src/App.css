@@ -22,6 +22,7 @@ html, body {
   border: 4px solid #936FAF; 
   border-radius: 8px;
   font-family: "Dynapuff";
+  cursor: pointer;
 }
 
 .button:hover {
@@ -156,6 +157,11 @@ html, body {
   height: 53px;
 }
 
+.minimize-button:hover, .exit-button:hover {
+  width: 60px;
+  height: 60px;
+}
+
 .screen-container {
   height: 482px; /* Fixed height */
   display: flex;
@@ -192,6 +198,9 @@ html, body {
   font-size: 20px;
 }
 
+.play-button:hover {
+  width: 180px;
+}
 /* Winner Screen */
 .winner, .winner-title {
   margin: 0;
