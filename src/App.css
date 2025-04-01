@@ -1,11 +1,16 @@
 /* Global CSS */
 html, body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%; 
   width: 100%; 
   margin: 0;    
   padding: 0; 
   overflow: hidden; 
   font-family: "Dynapuff";
+  border: none;
+  background-color: #936FAF;
 }
 
 .drag {
@@ -121,8 +126,11 @@ html, body {
   height: 650px;
   background-color: #D1BFDA; /* Background color for the container */
   border-radius: 8px;
-  overflow: hidden;  /* Prevent any overflow and scrolling */
   border-color: #936FAF;
+
+  border: 7px solid #936FAF;  /* 4px border around the whole container */
+  /* Ensure the container has space to show all content and border */
+  position: relative;  /* Allows for accurate border rendering */
 }
 
 .top {
@@ -163,7 +171,7 @@ html, body {
 }
 
 .screen-container {
-  height: 482px; /* Fixed height */
+  height: 553px; /* Fixed height */
   display: flex;
   justify-content: center; /* Center the content horizontally */
   align-items: center; /* Center the content vertically */

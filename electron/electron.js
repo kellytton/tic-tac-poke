@@ -5,8 +5,8 @@ const isDev = process.env.IS_DEV == "true" ? true : false;
 
 function createWindow() {
   const mainWindow = new BrowserWindow({
-    width: 700,
-    height: 650,
+    width: 713,
+    height: 663,
     autoHideMenuBar: true, // Adjust this to true to hide the top menu (autoHideMenuBar)
     resizable: false,
     frame: false, // Disables the default window frame
