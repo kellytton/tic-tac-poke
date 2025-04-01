@@ -1,6 +1,7 @@
 {
   "name": "tic-tac-poke",
   "productName": "tic-tac-poke",
+  "description": "pokemon themed tic-tac-toe game",
   "author": "Kelly Ton",
   "private": true,
   "version": "1.0.0",
