@@ -1,7 +1,9 @@
 {
-  "name": "tic-tac-toe",
+  "name": "tic-tac-poke",
+  "productName": "tic-tac-poke",
+  "author": "Kelly Ton",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "electron/electron.js",
   "scripts": {
     "dev": "vite",
@@ -12,11 +14,13 @@
     "electron:dev": "concurrently -k \"cross-env BROWSER=none npm run dev\" \"npm run electron\"",
     "electron:builder": "electron-builder",
     "build:for:electron": "tsc --noEmit && cross-env ELECTRON=true vite build",
-    "app:build": "npm run build:for:electron && npm run electron:builder"
+    "app:build": "npm run build:for:electron && npm run electron:builder",
+    "package": "npm run app:build"
   },
   "dependencies": {
     "concurrently": "^9.1.2",
     "cross-env": "^7.0.3",
+    "http2-wrapper": "^2.2.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.4.1",
@@ -36,11 +40,15 @@
     "vite": "^6.2.0"
   },
   "build": {
-    "appId": "com.devname.package",
-    "productName": "Tic-Tac-Toe",
+    "appId": "com.KellyTon.TicTacPoke",
+    "productName": "Tic-Tac-Poke",
     "copyright": "Copyright © 2025 ${author}",
     "mac": {
-      "category": "public.app-category.utilities"
+      "category": "public.app-category.utilities",
+      "icon": "src/assets/Masterball.icns"
+    },
+    "win": {
+      "icon": "src/assets/Masterball.ico"  
     },
     "nsis": {
       "oneClick": false,
