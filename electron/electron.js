@@ -17,6 +17,7 @@ function createWindow() {
     },
   });
 
+  console.log(path.join(__dirname, "../dist/index.html"));  // Log the path for debugging
   mainWindow.loadURL(
     isDev
       ? "http://localhost:3000"

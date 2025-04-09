@@ -7,4 +7,5 @@ export default defineConfig({
     port: 3000
   },
   plugins: [react()],
-})
+  base: './' // app will be served relative to the current directory
+});
