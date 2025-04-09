@@ -30,7 +30,7 @@ function createWindow() {
 
   // Handle Close
   ipcMain.on("close-btn", () => {
-    mainWindow.close();
+    app.quit();
   });
 
   // Open the DevTools if in development mode
