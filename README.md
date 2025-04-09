@@ -1,6 +1,6 @@
 # **Tic-Tac-Poké**
 
-Tic-Tac-Poké is a fun and cute version of the classic Tic-Tac-Toe game, featuring the Master Ball and Love Ball from Pokémon! The game lets you play against a friend or challenge yourself, all within a cute Pokémon-themed environment.
+Tic-Tac-Poké is a fun and cute version of the classic Tic-Tac-Toe game, featuring the Master Ball and Love Ball from Pokémon! The game lets you play against a friend within a cute Pokémon-themed environment.
 
 Built with **React**, **Vite**, and **Electron**, Tic-Tac-Poké brings the nostalgia of Pokémon into a simple game.
 
@@ -24,4 +24,4 @@ Built with **React**, **Vite**, and **Electron**, Tic-Tac-Poké brings the nosta
 
 ---
 
-Updated as of 3/31
+Updated as of 4/9

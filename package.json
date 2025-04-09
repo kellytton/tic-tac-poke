@@ -49,7 +49,9 @@
       "icon": "src/assets/Masterball.icns"
     },
     "win": {
-      "icon": "src/assets/Masterball.ico"  
+      "icon": "src/assets/Masterball.ico",
+      "target": "nsis",
+      "defaultArch": "x64"
     },
     "nsis": {
       "oneClick": false,

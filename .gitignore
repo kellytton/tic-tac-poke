@@ -7,11 +7,14 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node modules
 node_modules
+
+# Electron build output
 dist
 dist-ssr
 *.local
-dist_electron
+/dist_electron/
 
 # Editor directories and files
 .vscode/*
