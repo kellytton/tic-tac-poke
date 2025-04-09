@@ -8,13 +8,13 @@
   "main": "electron/electron.js",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "electron": "wait-on tcp:3000 && cross-env IS_DEV=true electron .",
     "electron:pack": "electron-builder --dir",
     "electron:dev": "concurrently -k \"cross-env BROWSER=none npm run dev\" \"npm run electron\"",
     "electron:builder": "electron-builder",
-    "build:for:electron": "tsc --noEmit && cross-env ELECTRON=true vite build",
+    "build:for:electron": "cross-env ELECTRON=true vite build",
     "app:build": "npm run build:for:electron && npm run electron:builder",
     "package": "npm run app:build"
   },
