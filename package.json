@@ -59,7 +59,8 @@
     },
     "files": [
       "dist/**/*",
-      "electron/**/*"
+      "electron/**/*",
+      "src/assets/**/*"
     ],
     "directories": {
       "buildResources": "assets",

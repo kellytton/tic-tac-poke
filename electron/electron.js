@@ -21,7 +21,7 @@ function createWindow() {
   mainWindow.loadURL(
     isDev
       ? "http://localhost:3000"
-      : `file://${path.join(__dirname, "../dist/index.html")}`
+      : `file://${path.resolve(__dirname, "../dist/index.html")}`
   );
 
   // Handle Minimize
