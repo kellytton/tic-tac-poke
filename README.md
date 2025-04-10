@@ -21,6 +21,14 @@ Built using:
 
 ---
 
+## 🖼️ Preview
+
+Here's a peek at the game:
+
+![Game UI](./assets/mainmenu.png)
+
+---
+
 ## 🛠️ Tech Stack
 
 | Tool       | Purpose                              |
