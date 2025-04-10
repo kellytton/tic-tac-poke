@@ -24,4 +24,36 @@ Built with **React**, **Vite**, and **Electron**, Tic-Tac-Poké brings the nosta
 
 ---
 
-Updated as of 4/9
+## Getting Started
+
+To get started with the project, clone the repository and install the necessary dependencies.
+
+### **Prerequisities**
+
+- **Node.js** (preferably the latest LTS version)
+- **npm**
+- For cross-platform builds, you'll need to have the appropriate environment set up for either macOS or windows.
+
+### **Installation**
+
+1. **Clone the repository**
+
+    ```bash
+    git clone https://github.com/kellytton/tic-tac-poke.git
+    cd tic-tac-poke
+    ```
+
+2. **Install Dependencies**
+
+    ```bash
+    npm install
+    ```
+    This will create the `node_modules` folder and install all the necessary dependencies.
+
+---
+
+## **Authors**
+
+- **Kelly Ton** - *Initial work* - [kellytton](https://github.com/kellytton)
+
+---
