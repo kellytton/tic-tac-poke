@@ -25,7 +25,7 @@ Built using:
 
 Here's a peek at the game:
 
-<img src="./assets/gameplay.png" alt="Game UI" width="400" height="auto"/>
+<img src="./assets/mainmenu.png" alt="Game UI" width="400" height="auto"/>
 
 ---
 
