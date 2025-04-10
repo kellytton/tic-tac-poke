@@ -51,7 +51,9 @@
     "win": {
       "icon": "src/assets/Masterball.ico",
       "target": "nsis",
-      "defaultArch": "x64"
+      "defaultArch": "x64",
+      "forceCodeSigning": false,
+      "signAndEditExecutable": false
     },
     "nsis": {
       "oneClick": false,
