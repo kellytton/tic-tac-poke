@@ -1,32 +1,38 @@
-# **Tic-Tac-Poké**
+# 🎮 Tic-Tac-Poké
 
-Tic-Tac-Poké is a fun and cute version of the classic Tic-Tac-Toe game, featuring the Master Ball and Love Ball from Pokémon! The game lets you play against a friend within a cute Pokémon-themed environment.
+Tic-Tac-Poké is a **fun and cute version** on the classic Tic-Tac-Toe game — now starring the **Master Ball** and **Love Ball** from the world of Pokémon! The game lets you play against a friend within a cute Pokémon-themed environment.
 
-Built with **React**, **Vite**, and **Electron**, Tic-Tac-Poké brings the nostalgia of Pokémon into a simple game.
+Built using:
 
----
-
-## **Features**
-
-- Play as either the **Master Ball** or the **Love Ball**.
-- A smooth and intuitive interface built with **React**.
-- **Vite** for fast and efficient development.
-- **Electron** integration for a desktop app experience.
-- **Draw detection** and **winner screen** for a fully functional game flow.
+- ⚛️ React – for a dynamic, interactive game UI
+- ⚡ Vite – for fast hot-reloading during development
+- 🖥️ Electron – to turn the web experience into a cozy desktop app
 
 ---
 
-## **Technologies Used**
+## 🌟 Features
 
-- **React** – For building the user interface and managing game state.
-- **Vite** – A modern build tool for faster development and HMR (Hot Module Replacement).
-- **Electron** – To package the game as a cross-platform desktop application.
+- 🟣 Play as either the **Master Ball** or 💗 the **Love Ball**
+- 🎨 Pokémon-inspired visuals and retro charm
+- ✨ Smooth, responsive gameplay using React 
+- 🖥️ Cross-platform desktop support via Electron
+- 🎉 Winner detection + draw screen animations
+- 🔁 Restart and play again endlessly!
 
 ---
 
-## Getting Started
+## 🛠️ Tech Stack
 
-To get started with the project, clone the repository and install the necessary dependencies.
+| Tool       | Purpose                              |
+|------------|--------------------------------------|
+| React      | Build the game UI and logic          |
+| Vite       | Dev server, bundling, and HMR        |
+| Electron   | Wrap the app into a native desktop app |
+| npm        | Dependency management and scripts    |
+
+---
+
+## 🚀 Getting Started
 
 ### **Prerequisities**
 
@@ -34,7 +40,7 @@ To get started with the project, clone the repository and install the necessary 
 - **npm**
 - For cross-platform builds, you'll need to have the appropriate environment set up for either macOS or windows.
 
-### **Installation**
+### 🧑‍💻 **Installation**
 
 1. **Clone the repository**
 
@@ -50,7 +56,7 @@ To get started with the project, clone the repository and install the necessary 
     ```
     This will create the `node_modules` folder and install all the necessary dependencies.
 
-### **Building for Your Platform**
+### 🛠️️ **Building for Your Platform**
 
 1. **macOS**
     ```bash
@@ -64,11 +70,3 @@ To get started with the project, clone the repository and install the necessary 
     npm run app:build
     ```
     This will create a `.exe` file that you can install and run on Windows.
-
----
-
-## **Authors**
-
-- **Kelly Ton** - *Initial work* - [kellytton](https://github.com/kellytton)
-
----
