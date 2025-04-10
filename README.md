@@ -50,6 +50,21 @@ To get started with the project, clone the repository and install the necessary 
     ```
     This will create the `node_modules` folder and install all the necessary dependencies.
 
+### **Building for Your Platform**
+
+1. **macOS**
+    ```bash
+    npm run app:build
+    ```
+    This will create a `.dmg` file that you can install and run on macOS.
+
+2. **Windows**
+
+    ```bash
+    npm run app:build
+    ```
+    This will create a `.exe` file that you can install and run on Windows.
+
 ---
 
 ## **Authors**
