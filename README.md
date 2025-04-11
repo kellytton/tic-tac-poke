@@ -25,7 +25,10 @@ Built using:
 
 Here's a peek at the game:
 
-<img src="./assets/mainmenu.png" alt="Game UI" width="400" height="auto"/>
+<div style="display: flex; gap: 16px;">
+  <img src="./assets/mainmenu.png" alt="Game UI: Main Menu" width="400" height="auto"/>
+  <img src="./assets/gamepage.png" alt="Game UI: Game Page" width="400" height="auto"/>
+</div>
 
 ---
 
